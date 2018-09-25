@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>i-Ready</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.i-ready.com/instruction/student-dashboard/release-1.20.0/2/css/ca.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.i-ready.com/instruction/student-dashboard/release-1.20.0/2/css/app.css" />
+  <script src="//cdn.i-ready.com/client/js/i-ready.js?version=9.1.2"></script>
+</head>
+
+<body>
+  <div id="dash-content" style="height: 100%"></div>
+
+  <script>
+  /*<![CDATA[*/
+    // need to set document.domain for iSM and other iready apps to work correctly
+    var APP_BASE_URL = '//cdn.i-ready.com/instruction/student-dashboard/release-1.20.0/2';
+  	var CDN_CLIENT_URL = addProtocol('//cdn.i-ready.com/client');
+    var LT_INSTRUCTION_URL = addProtocol('//cdn.i-ready.com');
+    var LT_INSTRUCTION_BASE = '';
+    var LT_LESSON_NUM_RETRIES = 1;
+    var LT_LESSON_TIMEOUT_MILLIS = 120000;
+    var CR_INSTRUCTION_URL = addProtocol('//cdn.i-ready.com');
+    var CR_INSTRUCTION_BASE = '/filament';
+    var LT_QUESTIONS_URL =  addProtocol('//cdn.i-ready.com');
+    var LT_QUESTIONS_BASE = '/assessment/swfs';
+    var APPLICATION_BASE = '/';
+    var SESSION_KEEP_ALIVE_INTERVAL = 14;
+    var SBA_CHEAT_ENABLED = false;
+    var INSTRUCTION_MATH_VERSION = '1.6.x/5';
+    var INSTRUCTION_READING_VERSION = '1.2.x/4';
+    var INSTRUCTION_READING_COMPREHENSION_VERSION = '1.2.x/2';
+    var INSTRUCTION_VOCAB_VERSION = '1.x/14';
+    var REWARDS_GAMES_VERSION = 'master/54';
+    var REWARDS_GAMES_PATHSPINNERS_VERSION = 'master/50';
+    var REWARDS_GAMES_BEGOOPED_VERSION = '1';
+    var REWARDS_GAMES_CATSTACKER_VERSION = 'master/63';
+    var REWARDS_GAMES_GLOWBUG_VERSION = '1';
+    var CDN_ASSESSMENT_PLAYER_URL = '//cdn.i-ready.com/assessment/player/master/7';
+    var PHOENIX_LESSONS_VERSION = 'master/117';
+    var TRACK_API_ERRORS = false;
+    var API_RETRY_SETTINGS = {'retryDelay':500,'maxRetries':2,'shouldRetry':1,'maximumWaitTime':10000,'minimumWaitTime':1000};
+    var FLASH_VERSION_URL = '//cdn.i-ready.com/flash/masterversion.xml';
+    var STUDENT_TOOLBOX_MATH_ENABLED = false;
+    var STUDENT_TOOLBOX_ELA_ENABLED = false;
+    var STUDENT_TOOLBOX_APP_VERSION = 'release-1.1.1/1';
+    var STUDENT_TOOLBOX_EREADER_VERSION = 'release-1.1.1/1';
+    var STUDENT_TOOLBOX_LOGVIEWER_VERSION = 'release-1.0.0/1';
+    var STUDENT_TOOLBOX_EREADER_SEARCH_URL = 'https://api.i-ready.com/toolbox/v1';
+
+    var dashboardJson = {'activityContainer':null,'buddyData':{'buddyId':'17','buddyName':'Sweet T','buddyPath':'img/buddies/17/','gameEnabled':false},'chronologicalGrade':'5','creditsAvailable':0,'districtId':'8a82827154bded920154e3e33dfe55c8','firstName':'JOSSAYA','instructionEnabled':{'math':true,'ela':true},'lastName':'CAMILLE','schoolId':'00198932','selectedSubject':null,'settings':{'MY_STUFF_VISIBLE':true,'enableStudentToolbox':{'math':false}},'state':'FL','studentDashboardEnabled':true,'subjects':[{'longDisplayName':'Mathematics','shortDisplayName':'Math','subjectId':'math','subjectName':'math'},{'longDisplayName':'Reading','shortDisplayName':'Reading','subjectId':'ela','subjectName':'ela'}],'switchedUser':false,'themeData':{'themeId':'404','themeName':'Golden State Warriors','themePath':'img/themes/nba_goldenstate_warriors/','themeType':{'$type':'ThemeType','$name':'HTML5_NON_TILEABLE'}},'userId':'8a8a80c94a38c082014a3af23cde3bd1'};
+  /*]]>*/
+  </script>
+  <script>
+    /*<![CDATA[*/
+	/* GA script */
+	var GA_TRACKING_ID = 'UA-24034912-4';
+    var _gaq = _gaq || [];
+    (function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    /*]]>*/
+  </script>
+
+  <script src="//cdn.i-ready.com/client/js/jquery-1.7.1.min.js"></script>
+  <script src="//cdn.i-ready.com/client/js/swfobject.js"></script>
+  <script crossorigin="anonymous" src="//cdn.i-ready.com/instruction/student-dashboard/release-1.20.0/2/js/dashboardApp.js"></script>
+  <script>
+	//sets global var in i-ready.js to indicate page has loaded
+  	landingPage = true;
+  </script>
+
+</body>
+
+</html>
