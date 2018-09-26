@@ -1,0 +1,49 @@
+<html>
+<body>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "***7") {
+alert('Come Play!');
+window.open('https://cdn.i-ready.com/instruction/game-catstacker/master/63');
+break;
+} 
+testV+=1;
+var pass2 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass2.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+}
+if (!pass2) 
+history.go(-1);
+if (pass2.toLowerCase() == "***7") {
+alert('Come Play!');
+window.open('https://cdn.i-ready.com/instruction/game-catstacker/master/63');
+break;
+} 
+testV+=1;
+var pass2= 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass2.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+ 
+
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+</body>
+</html>
+https://codeer12.github.io/youtubebros/Password%20Protected%20Path%20Spinners.html
+
