@@ -1,48 +1,19 @@
 <html>
 <head> 
-    <script>
-    function requestFullScreen(element) {
-    // Supports most browsers and their versions.
-    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
-
-    if (requestMethod) { // Native full screen.
-        requestMethod.call(element);
-    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-        var wscript = new ActiveXObject("WScript.Shell");
-        if (wscript !== null) {
-            wscript.SendKeys("{F11}");
-        }
-    }
-}
-
-function makeFullScreen() {
-    document.getElementsByTagName("iframe")[0].className = "fullScreen";
-    var elem = document.body;
-    requestFullScreen(elem);
-}
-    </script>
+    <head>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127031953-1"></script>
 <script>
-document.getElementsByTagName("iframe")[0].className = "fullScreen";
-</script>
-<style>
- body, html {
-    height: 100%;
-    margin: 0;
-}
-.fullScreen {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-</style>
-</head>    
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127031953-1');
+</head>
 <body>
 <div allowfullscreen>
 <object data="/youtubebros/8217.swf" width="748" height="561">
 </object>
-<button onclick="makeFullScreen()"
 </div>
 </body>
 </html>
