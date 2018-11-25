@@ -1,7 +1,7 @@
 <html>
 <head> 
     <script>
-    function requestFullScreen(element) {
+    function requestFullScreen(iframe) {
     // Supports most browsers and their versions.
     var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
     if (requestMethod) { // Native full screen.
@@ -14,16 +14,16 @@
     }
 }
 function makeFullScreen() {
-    document.getElementsByTagName("iframe")[1].className = "fullScreen";
-    var elem = document.iframe;
+    document.getElementsByTagName("iframe")[0].className = "fullScreen";
+    var elem = document.body;
     requestFullScreen(elem);
 }
     </script>
 <script>
-document.getElementsByTagName("iframe")[1].className = "fullScreen";
+document.getElementsByTagName("iframe")[0].className = "fullScreen";
 </script>
 <script>
-document.getElementsByTagName("iframe")[1].className = "fullScreen";
+document.getElementsByTagName("iframe")[0].className = "fullScreen";
 </script>
 <style>
  body, html {
@@ -43,7 +43,7 @@ document.getElementsByTagName("iframe")[1].className = "fullScreen";
 
 <iframe allowfullscreen src="https://codeer12.github.io/youtubebros/Strike%20Force%20Heroes.html" width="748" height="561"></iframe>
 
-<button onclick="makeFullScreen()">
+<button onclick="makefullScreen()">
 <img src="https://triple8.com/wp-content/uploads/sites/7/2017/09/switch-to-full-screen-button_318-76446.jpg" width="338" height="338" />
 </button>
 
